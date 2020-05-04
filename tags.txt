@@ -1,0 +1,202 @@
+<br/> - Quebra de linha
+
+&nbsp; - Espaço
+
+<wbr/> - Deixa a palavra quebrar ao ficar pequeno a pagina
+
+&shy; - Soft Hyphen - Quebra a palavra na linha e coloca hifen nela
+
+&lt; - Less then <
+&gt; - Greater then >
+&le; - Less equal <=
+&ge; - Greater equal >=
+&pound; - libra
+&yen; - yen
+&euro; - euro
+&copy; - Simbolo do copyright
+&reg; - Marca registrada
+&trade; - trademark
+&permil; - permil
+&sum; - soma
+&infin; - simbolo infinito
+&times; - multiplicação
+&plusmn; - mais ou menos
+&oplus; - mais dentro de um circulo
+&radic; - radiciação
+&ne; - simbolo de diferente
+
+&delta - letra grega delta
+&Delta - delta em maiúsculo^
+&Lambda;
+&omega;
+&phi;
+
+&larr; - Seta para esquerda
+&rarr; - seta para direita
+&uarr; - seta para cima
+&darr; - seta para direita
+&harr; - seta para os dois lados
+
+&spades;
+&clubs; 
+&hearts;
+&diamonds; - Naipess das cartas
+
+
+<b> </b> - Negrito
+<i> </i> - Itálico
+<em> </em> - Em Ênfase
+<del> </del> - Texto riscado
+
+<span style="text-decoration: underline;" </span> - Sublinhado
+<span style="text-decoration: overline</span> - Linha acima do texto
+(Utilização de CSS)
+
+<span style="font-weight: normal/bold/bolder/100~900;</span>  Normal / Negrito / Negrito pra caralho / Valores de negritude
+
+<h2 style="text-align: center/left/right"> </h2> - Formatação de linha.
+
+<p style="text-align: justify;"> - Texto justificado, alinhado esquerda e direita.,
+
+
+text-indent: 50px; (colocando depois do ; do justify, dentro da tag) - Parágrafo.
+
+<sup> </sup> - O que está dentro será sobrescrito (escrito um pouco acima)
+<sub> </sub> - O que está dentro será subescrito (escrito um pouco abaixo) (exemplo: <p> x<sup>2</sup> e H<sub>2</sub>O </p>)
+
+<code> </code> - Tag para armazenar código, tudo dentro dela não será interpretado pelo navegador
+<pre> </pre> - Tag para pré-formatação de textos, dentro dessa tag, os espaços utilizados e os enters serão lidos pelo navegador
+<pre>
+        <code>
+            #include <iostream>;
+            int main(){
+                cout << "Olá, mundo!";
+                return 0;
+            }
+        </code>
+     </pre>
+Exemplo acima aparece no navegador já formatado.
+
+
+
+Aula sobre cores
+
+<body style="background-color:yellow"> </body> - Muda a cor do fundo dentro da tag específica
+Da para ir na tag de style, e lá criar um body{ } com as mudanças necessarias, para aplicar em todos os bodys.
+
+Como configurar cores em HTML5
+Nome da cor: red/blue/yellow
+Código RGB: #60453E
+O código RBG começa com #, e é seguido por 6 digitos, onde os dois primeiros são a quantidade de vermelho, os dois seguintes de verde, e os dois últimos a quantidade de azul.
+Pode também ser utilizado o valor absoludo da cor, ao invés do hexadecimal
+rgb(35, 137, 195);
+
+Imagem de fundo também pode ser utilizada: 
+background-image: url("caminho-da-imagem");
+
+Função RGBA
+rgba(r,g,b,a) A é para alpha, que vai de 0 a 1, para transparência.
+
+Para cores pode ser usado o HSL e o HSLA além do RGB e código Hexadecimal
+
+
+Imagens em HTML
+
+<img src="caminho-da-imagem"/>
+
+colocar imagens entre <figure> </figure> para dar sentido semântico nela.
+
+Legenda de imagens:
+<figcaption> </figcaption>	
+
+
+Para questão de organização, os estilos são mantidos em uma pasta diferente, para chamar o mesmo é utilizado a tag LINK
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+E o arquivo de estilo no começo usa @charset "UTF-8";
+
+
+Como formatar imagens com CSS:
+
+<figure class="foto-legenda">
+        <img src="_imagens/glass-quadro-homem-mulher.jpg"/>
+        <figcaption>
+            <h3>Google Glass</h3>
+            <p>Uma nova maneira de ver o mundo.</p>
+        </figcaption>
+</figure>
+
+Na imagem onde está com a tag de figure adicionar o parâmetro class="nome-da-classe", assim, tudo que for criado para esta classe no arquivo de estilo será aplicado
+dentro desta classe.
+
+exemplo arquivo estilo:
+
+figure.foto-legenda
+{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img
+{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption
+{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption
+{
+    opacity: 1;
+}
+
+No arquivo de estilo é usado figure.nome-da-classe { /*Comandos aqui*/ } para geração de comandos e manipulação na imagem
+
+
+<nav> </nav> - menu de navegação, tudo dentro disso é parte do nosso menu
+
+Listas em HTML
+UL e OL, Unnordered e Ordered List, dentro de cada lista, temos os list itens, ou LI
+Utilizando a tag <ol> </ol> e colocando os elementos <li> </li> dentro dela, ficará uma lista ordenada
+<ol>
+<li>Acessar</li>
+<li>Sair</li>
+</ol>
+
+Fica:
+
+1. Acessar
+2. Sair
+
+Dentro da tag OL pode ser utilizado tipos, para alterar o tipo de organização de enumeração da lista
+<ol type="tipo-de-organização"> </ol>
+tipo-de-organização podendo ser 1, a, A, i, I.
+
+Também pode ser utilizado o parâmetro start para definir de que numero ou letra a lista irá começar
+exemplo:
+<ol type="1" start="3"> </ol>
+
+O parâmetro START só aceita valores numéricos, porque ele serve para começar a partir do N elemento na lista, mesmo em caso de ordem alfabética.
+
+Lista não ordenadas são feitas com a tag <ul> </ul>, estas listas, como foi dito, não são ordenadas, mas ainda pode ser utilizado o parâmetro TYPE, mas com outros valores
+<ul type="circle/square/disc(padrão)"> </ul>
+
+Dentro de uma lista, pode existir outras listas, fazendo assim, listas encadeadas
+
+
+<a> </a> - Ancora para hypertexto
+<a href="http://link-de-site.com">Palavra</a>
+<a href="link" target="_blank"> </a> - Ao clicar no link abre uma nova aba e nao na aba atual
