@@ -213,3 +213,6 @@ display:
 padding:
 margin:
 Entre muitas outras 
+
+
+Da para importar fontes de pastas, ou pelo google fonts.
