@@ -200,3 +200,16 @@ Dentro de uma lista, pode existir outras listas, fazendo assim, listas encadeada
 <a> </a> - Ancora para hypertexto
 <a href="http://link-de-site.com">Palavra</a>
 <a href="link" target="_blank"> </a> - Ao clicar no link abre uma nova aba e nao na aba atual
+
+
+Para formatação de MENUS que foram feitos com a tag <nav> </nav> é utilizado a tag CSS nav#ID-DA-NAV Nome-Da-Subtag { }
+Dentro destes blocos de comandos, podem ser usados parâmetros como por exemplo:
+list-style
+text-transform
+position
+top:
+left:
+display:
+padding:
+margin:
+Entre muitas outras 
