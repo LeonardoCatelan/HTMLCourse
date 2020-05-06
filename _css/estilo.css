@@ -45,7 +45,9 @@ header#cabecalho h2
     margin-top: 0px;
 }
 
-body{
+body
+{
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
@@ -57,6 +59,18 @@ div#interface
     margin: -20px auto 0px auto; /*Cima, direita, baixo, esquerda*/
     box-shadow: 0px 0px 20px rgba(0,0,0,0.5); /*Deslocamento lateral e vertical, espalhamento da sombra, e cor da sombra*/
     padding: 10px;
+}
+
+a
+{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: blue;
 }
 
 /* 
@@ -102,7 +116,7 @@ nav#menu ul
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 380px;
+    left: 360px;
 }
 
 nav#menu li
@@ -136,3 +150,129 @@ nav#menu a:hover
     color: white;
 }
 
+section#corpo
+{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2
+{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px;
+}
+
+header#cabecalho-artigo h1
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2
+{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3
+{
+    font-size: 12px;
+    color: #606060;
+}
+
+.direita
+{
+    text-align: right;
+}
+
+table#tabelaspec
+{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td
+{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce
+{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+}
+
+table#tabelaspec td.cd
+{
+    background-color: #cecece;  
+}
+
+table#tabelaspec caption
+{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span
+{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;   
+}
+
+aside#lateral
+{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2
+{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+footer#rodape
+{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p
+{
+    text-align: center;
+}
